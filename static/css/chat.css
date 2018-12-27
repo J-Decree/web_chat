@@ -1,0 +1,164 @@
+.nav-tabs li {
+    width: 50%;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+}
+
+.setting {
+    float: right;
+}
+
+.user-info {
+    height: 80px;
+    line-height: 60px;
+}
+
+.user-info img {
+    margin-top: 10px;
+}
+
+.left-contact-panel {
+    width: 200px;
+    height: 604px;
+    float: left;
+    background: #2e3238;
+    border: 1px solid #282b33;
+}
+
+.left-contact-panel ul {
+    background: #2e3238;
+    border: 1px solid #282b33;
+}
+
+.list-group-item {
+    background: #2e3238;
+    color: white;
+    border: 1px solid #282b33;
+}
+
+.right-chat-panel {
+    width: 750px;
+    height: 100%;
+    float: left;
+}
+
+
+.chat-box-title {
+    height: 50px;
+    background: #2e3238;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    border: 1px solid #282b33;
+}
+
+.chat-box-window {
+    height: 400px;
+    background: #eeeeee;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat-box-msg-box {
+    height: 120px;
+}
+
+#msg {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    float: right;
+}
+
+.mine-msg {
+    display: block;
+    max-width: 250px;
+    min-height: 50px;
+    float: right;
+    margin: 15px 0;
+}
+
+.others-msg {
+    display: block;
+    max-width: 250px;
+    min-height: 50px;
+    margin: 15px 0;
+}
+
+.mine-msg .msg-content {
+    background: #7cad3a;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.others-msg .msg-content {
+    background: #beaa8e;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.msg-item {
+    width: 100%;
+}
+
+.msg-content {
+    color: black;
+}
+
+.msg-datetime {
+    color: black;
+}
+
+.mine-msg .msg-datetime {
+    text-align: right;
+}
+
+.others-msg .msg-datetime {
+    text-align: left;
+}
+
+.msg-item img {
+    max-height: 250px;
+    max-width: 240px;
+}
+
+.msg-file {
+    padding: 10px;
+    background-color: #fff;
+    min-height: 75px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 2px;
+    position: relative;
+    border: 2px solid #b2e281;
+}
+
+.msg-file a:hover {
+    text-decoration: none;
+}
+
+.avatar, .username {
+    float: left;
+}
+
+.avatar {
+    margin-right: 5px;
+}
+
+.avatar img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+

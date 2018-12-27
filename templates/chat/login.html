@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    XXXXXXXXXXX
+    <button onclick="love()">ssssss</button>
+    {% csrf_token %}
+{% endblock body %}
+
+{% block js %}
+    <script>
+        function love() {
+            {#            $.ajax({#}
+            {#                url: '/api/v1/login/',#}
+            {#                type: 'POST',#}
+            {#                data: {qq: '12345678', password: 'juedui11'},#}
+            {#                success: function (arg) {#}
+            {#                    console.log(arg)#}
+            {#                }#}
+            {#            })#}
+            {#            #}
+                        $.ajax({
+                            url: '/api/v1/register/',
+                            type: 'POST',
+                            data: {username: '点点滴滴', password: 'juedui11'},
+                            success: function (arg) {
+                                console.log(arg)
+                            }
+                        })
+{#            $.ajax({#}
+{#                url: '/api/v1/message/',#}
+{#                type: 'POST',#}
+{#                data: {username: '点点滴滴', password: 'juedui11'},#}
+{#                success: function (arg) {#}
+{#                    console.log(arg)#}
+{#                }#}
+{#            })#}
+        }
+    </script>
+{% endblock js %}

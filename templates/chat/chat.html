@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+{% endblock css %}
+{% block body %}
+    <div class="chat-container container">
+        <div class="left-contact-panel">
+            <div class="list-group-item clearfix user-info">
+                    <span class="avatar"><img
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=534477720,3337262027&fm=26&gp=0.jpg"
+                            alt=""></span>
+                <span class="username">JDcress</span>
+                <div class="setting">
+                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                </div>
+            </div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#contact-tab" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#group-tab" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item active clearfix">
+                    <span class="avatar"><img
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=534477720,3337262027&fm=26&gp=0.jpg"
+                            alt=""></span>
+                    <span class="username">JDcress</span>
+                    <span class="badge">13</span>
+                </li>
+
+                <li class="list-group-item  clearfix">
+                    <span class="avatar"><img
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=534477720,3337262027&fm=26&gp=0.jpg"
+                            alt=""></span>
+                    <span class="username">JDcress</span>
+                    <span class="badge">13</span>
+                </li>
+
+                <li class="list-group-item clearfix">
+                    <span class="avatar"><img
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=534477720,3337262027&fm=26&gp=0.jpg"
+                            alt=""></span>
+                    <span class="username">JDcress</span>
+                    <span class="badge">13</span>
+                </li>
+
+                <li class="list-group-item clearfix">
+                    <span class="avatar"><img
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=534477720,3337262027&fm=26&gp=0.jpg"
+                            alt=""></span>
+                    <span class="username">JDcress</span>
+                    <span class="badge">13</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="right-chat-panel">
+            <div class="chat-box-title">
+                title
+            </div>
+            <div class="chat-box-window">
+                <div class="msg-item clearfix">
+                    <div class="mine-msg">
+                        <div class="msg-datetime">2018-4-13 12:23:23</div>
+                        <div class="msg-content">JDcress对冯绍峰颠三倒四丰富的</div>
+                    </div>
+                </div>
+
+                <div class="msg-item clearfix">
+                    <div class="others-msg">
+                        <div class="msg-datetime">2018-4-13 12:23:23</div>
+                        <div class="msg-content">JDcress对冯绍峰颠三倒四丰富的</div>
+                    </div>
+                </div>
+
+                <div class="msg-item clearfix">
+                    <div class="mine-msg">
+                        <div class="msg-datetime">2018-4-13 12:23:23</div>
+                        <div class="msg-content">JDcress对冯绍峰颠三倒四丰富的</div>
+                    </div>
+                </div>
+
+                <div class="msg-item clearfix">
+                    <div class="mine-msg">
+                        <div class="msg-datetime">2018-4-13 12:23:23</div>
+                        <a href="https://pic.wenwen.soso.com/p/20101216/20101216172440-1727154787.jpg"
+                           target="_blank">
+                            <img src="https://pic.wenwen.soso.com/p/20101216/20101216172440-1727154787.jpg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="msg-item clearfix">
+                    <div class="others-msg">
+                        <div class="msg-datetime">2018-4-13 12:23:23</div>
+                        <div class="msg-content">JDcress对冯绍峰颠三倒四丰富的</div>
+                    </div>
+
+
+                    <div class="msg-item clearfix">
+                        <div class="others-msg">
+                            <div class="msg-datetime">2018-4-13 12:23:23</div>
+                            <a href="https://pic.wenwen.soso.com/p/20101216/20101216172440-1727154787.jpg"
+                               target="_blank">
+                                <img src="https://pic.wenwen.soso.com/p/20101216/20101216172440-1727154787.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="msg-item clearfix">
+                        <div class="others-msg">
+                            <div class="msg-datetime">2018-4-13 12:23:23</div>
+                            <div class="msg-file">
+                                <a href="">
+                                    <p class="title">五轮书.pdf.pdf</p>
+                                    <div class="opr">
+                                        <span class="ng-binding">6.9MB</span>
+                                        <span class="sep">|</span>
+                                        <span class="ng-scope">发送失败</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box-msg-box">
+                <textarea name="" id="msg"></textarea>
+                <button class="btn btn-primary">发送消息</button>
+            </div>
+
+        </div>
+    </div>
+{% endblock body %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'node_modules/kindeditor/kindeditor-all-min.js' %}"></script>
+    <script>
+        initKindEditor();
+        function initKindEditor() {
+             editor = KindEditor.create('#msg', {
+                width: '100%',
+                resizeType: 0, //不能改变大小
+                themeType: 'simple',
+                items: [
+                    'image', 'emoticons', 'insertfile'
+                ],
+                uploadJson: window.location.pathname + 'upload/kindeditor/',
+                filePostName: 'upload_img',//自定制文件名,request.FILES.get('upload_img')
+                extraFileUploadParams: {
+                    'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val()
+                },
+                afterChange: function () { //编辑器内容发生变化后，将编辑器的内容设置到原来的textarea控件里
+                    this.sync();
+                    var text = this.text();
+                    var reg = /<img src=.+?>/g;
+                    text = text.replace(reg, '$');
+                    $('#text-num').html(text.length);
+                },
+                afterBlur: function () {
+                    this.sync();
+                },
+
+            });
+        }
+    </script>
+{% endblock js %}

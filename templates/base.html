@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+{% block body %}
+{% endblock body %}
+</body>
+<script type="text/javascript" src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+{% block js %}
+{% endblock js %}
+</html>
