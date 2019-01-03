@@ -76,3 +76,12 @@ class TestRedisListView(APIView):
         value = request.data['value']
         self.conn.lpush(list_key, value)
         return Response({})
+
+
+def url_test(request, **kwargs):
+    print('request.path_info->路径', request.path_info)
+    print('request.get_full_path()->路径加路径的参数', request.get_full_path())
+    print('request.get_all_path()->获取带参数URL',request.get_all_path())
+    print('request.path->获取不带参数URL',request.path)
+    print('request.get_host()->获取主机地址',request.get_host())
+    return HttpResponse('dddd')
